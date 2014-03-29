@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_shuffle_players"
+        android:icon="@drawable/ic_shuffle"
+        android:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_add_player"
+        android:icon="@drawable/ic_add_player"
+        android:showAsAction="always"/>
+
+</menu>

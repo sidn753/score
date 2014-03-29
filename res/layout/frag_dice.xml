@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:gravity="center_horizontal"
+                style="@style/root_view.relative"
+    >
+
+    <!-- button bar- at bottom of the screen but declared first because size known -->
+    <LinearLayout
+        android:id="@+id/frag_dice_button_container"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        style="@style/button_bar"> <!-- HORIZONTAL layout -->
+
+        <Button
+            android:id="@+id/button_roll_dice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/dice_roll_button_text"
+            style="@style/button"/>
+    </LinearLayout>
+
+    <!--root of dice grid -->
+    <LinearLayout
+        android:id="@+id/frag_dice_view_grid"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_above="@id/frag_dice_button_container"
+        android:orientation="vertical">
+
+        <!--row 1 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            style="@style/autosized">
+            <!-- die 1-->
+            <LinearLayout
+                android:id="@+id/frag_dice_parent_die_1"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                style="@style/autosized.horizontal">
+
+                <TextView
+                    android:id="@+id/dice_output_1"
+                    style="@style/frag_dice_textview_output"/>
+
+                <TextView
+                    android:id="@+id/frag_dice_textview_numsides_1"
+                    style="@style/frag_dice_textview_numsides"/>
+            </LinearLayout>
+            <!--vertical divider-->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- die 2-->
+            <LinearLayout
+                android:id="@+id/frag_dice_parent_die_2"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                style="@style/autosized.horizontal">
+
+                <TextView
+                    android:id="@+id/dice_output_2"
+                    style="@style/frag_dice_textview_output"/>
+
+                <TextView
+                    android:id="@+id/frag_dice_textview_numsides_2"
+                    style="@style/frag_dice_textview_numsides"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--horizontal divider-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <!--row 2 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            style="@style/autosized">
+            <!-- die 3-->
+            <LinearLayout
+                android:id="@+id/frag_dice_parent_die_3"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                style="@style/autosized.horizontal">
+
+                <TextView
+                    android:id="@+id/dice_output_3"
+                    style="@style/frag_dice_textview_output"/>
+
+                <TextView
+                    android:id="@+id/frag_dice_textview_numsides_3"
+                    style="@style/frag_dice_textview_numsides"/>
+            </LinearLayout>
+            <!--vertical divider-->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- die 4-->
+            <LinearLayout
+                android:id="@+id/frag_dice_parent_die_4"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                style="@style/autosized.horizontal">
+
+                <TextView
+                    android:id="@+id/dice_output_4"
+                    style="@style/frag_dice_textview_output"/>
+
+                <TextView
+                    android:id="@+id/frag_dice_textview_numsides_4"
+                    style="@style/frag_dice_textview_numsides"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--horizontal divider-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <!--row 3 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            style="@style/autosized">
+            <!-- die 5-->
+            <LinearLayout
+                android:id="@+id/frag_dice_parent_die_5"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                style="@style/autosized.horizontal">
+
+                <TextView
+                    android:id="@+id/dice_output_5"
+                    style="@style/frag_dice_textview_output"/>
+
+                <TextView
+                    android:id="@+id/frag_dice_textview_numsides_5"
+                    style="@style/frag_dice_textview_numsides"/>
+            </LinearLayout>
+            <!--vertical divider-->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- die 6-->
+            <LinearLayout
+                android:id="@+id/frag_dice_parent_die_6"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                style="@style/autosized.horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/dice_output_6"
+                    style="@style/frag_dice_textview_output"/>
+
+                <TextView
+                    android:id="@+id/frag_dice_textview_numsides_6"
+                    style="@style/frag_dice_textview_numsides"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

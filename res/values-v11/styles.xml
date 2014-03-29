@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="button_bar" parent="@android:style/Holo.Light.ButtonBar">
+        <item name="android:background">@color/brand_green</item>
+    </style>
+
+    <style name="button" parent="@android:style/Widget.Holo.Button.Borderless">
+        <item name="android:selectableItemBackground">@null</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+</resources>

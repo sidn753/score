@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="team_colors">
+        <item>#00000000</item>
+        <item>#ef3142</item>
+        <item>#f58013</item>
+        <item>#f9b320</item>
+        <item>#8bcf24</item>
+        <item>#26963b</item>
+        <item>#059d96</item>
+        <item>#58bae8</item>
+        <item>#3871c1</item>
+        <item>#9955b0</item>
+        <item>#ee219a</item>
+        <item>#beb190</item>
+        <item>#845232</item>
+        <item>#231f20</item>
+        <item>#918f8f</item>
+
+    </array>
+
+    <string-array name="team_names">
+        <item>No Team</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Lime Green</item>
+        <item>Green</item>
+        <item>Teal</item>
+        <item>Sky Blue</item>
+        <item>Blue</item>
+        <item>Purple</item>
+        <item>Pink</item>
+        <item>Beige</item>
+        <item>Brown</item>
+        <item>Black</item>
+        <item>Gray</item>
+
+    </string-array>
+
+
+</resources>

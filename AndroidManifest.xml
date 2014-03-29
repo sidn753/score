@@ -1,0 +1,77 @@
+<!--TODO change package name for paid version-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.amusementlabs.whatsthescore"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18"/>
+
+    <!--TODO delete this line to remove internet permissions-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:theme="@style/Theme.WhatsTheScore"
+        android:icon="@drawable/ic_launcher"
+        android:logo="@drawable/ic_launcher"
+        android:label="@string/app_name">
+
+        <activity
+            android:name=".ActMain_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".nav.ActPrefs"
+            android:label="Settings"
+            android:parentActivityName=".ActMain_"
+            android:screenOrientation="portrait">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActMain_"/>
+        </activity>
+
+        <!--child activities -->
+        <activity
+            android:name=".ActEditPlayers_"
+            android:label="Edit Players"
+            android:parentActivityName=".ActMain_"
+            android:screenOrientation="portrait">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActMain_"/>
+        </activity>
+        <activity
+            android:name=".ActEditDice_"
+            android:label="Edit Dice"
+            android:parentActivityName=".ActMain_"
+            android:screenOrientation="portrait">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActMain_"/>
+        </activity>
+
+
+        <service android:name="ServiceTimer_"/>
+
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="transparent">#00000000</color>
+
+
+    <color name="team_red">#ef3142</color>
+    <color name="team_orange">#f58013</color>
+    <color name="team_yellow">#f9b320</color>
+    <color name="team_limegreen">#8bcf24</color>
+    <color name="team_green">#26963b</color>
+    <color name="team_teal">#059d96</color>
+    <color name="team_skyblue">#58bae8</color>
+    <color name="team_blue">#3871c1</color>
+    <color name="team_purple">#9955b0</color>
+    <color name="team_pink">#ee219a</color>
+    <color name="team_beige">#beb190</color>
+    <color name="team_brown">#845232</color>
+    <color name="team_black">#231f20</color>
+    <color name="team_gray">#918f8f</color>
+    <color name="team_white">#ffffff</color>
+
+    <color name="key_gray">#57585a</color>
+    <color name="key_black">#232121</color>
+    <color name="key_green">#66b86e</color>
+    <color name="key_red">#ef3142</color>
+
+    <color name="stats_header_bg">#d3d2d2</color>
+
+    <color name="brand_green">#6db37c</color>
+    <color name="button_bar_bg_red">#ef3142</color>
+
+    <color name="text_default">#58595b</color>
+    <color name="nav_drawer_bg_color">#d4d3d1</color>
+    <color name="actionbar_bg_color">#d4d3d1</color>
+
+
+</resources>

@@ -1,0 +1,211 @@
+<resources>
+
+
+    <style name="Theme.WhatsTheScore" parent="Theme.Sherlock.Light">
+
+        <item name="android:textColor">@color/text_default</item>
+
+        <item name="actionMenuTextColor">@color/text_default</item>
+        <item name="android:actionMenuTextColor">@color/text_default</item>
+
+        <item name="actionBarStyle">@style/WhatsTheScore.SherlockActionBarStyle</item>
+        <item name="android:actionBarStyle">@style/WhatsTheScore.SherlockActionBarStyle</item>
+
+    </style>
+
+
+    <style name="WhatsTheScore.SherlockActionBarStyle" parent="@style/Widget.Sherlock.Light.ActionBar.Solid">
+
+        <item name="background">@color/actionbar_bg_color</item>
+        <item name="android:background">@color/actionbar_bg_color</item>
+
+    </style>
+
+
+    <style name="root_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+
+    </style>
+
+    <style name="root_view.relative">
+    </style>
+
+    <style name="root_view.list_item">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/height_list_item</item>
+        <item name="android:paddingLeft">@dimen/padding_list_item</item>
+        <item name="android:paddingRight">@dimen/padding_list_item</item>
+        <item name="android:paddingTop">@dimen/padding_list_item</item>
+        <item name="android:paddingBottom">@dimen/padding_list_item</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="root_view.linear"></style>
+
+    <style name="root_view.linear.horizonal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="root_view.linear.vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="autosized"> <!-- for views sized by their parent layouts -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dip</item>
+    </style>
+
+    <style name="autosized.horizontal">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+
+    <style name="autosized.horizontal.centered">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="wrap.full_width">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="wrap.full_height">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+    <!--specific listview styles-->
+    <style name="nav_drawer">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/nav_drawer_width</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:background">@color/nav_drawer_bg_color</item>
+    </style>
+
+    <style name="text_nav_drawer" parent="autosized.horizontal">
+        <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="android:drawablePadding">@dimen/padding_nav_drawer_list_item_drawable</item>
+        <item name="android:padding">@dimen/padding_nav_drawer_list_item</item>
+        <item name="android:textSize">@dimen/font_size_nav_drawer_list_item</item>
+    </style>
+
+    <style name="dice_grid" parent="autosized">
+        <item name="android:numColumns">2</item>
+        <item name="android:verticalSpacing">0dp</item>
+        <item name="android:horizontalSpacing">0dp</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="frag_timer_textview_timer" parent="wrap.full_width">
+        <item name="android:gravity">center|center_vertical</item>
+        <item name="android:textSize">@dimen/font_size_timer</item>
+
+    </style>
+
+    <style name="frag_dice_textview_output">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/font_size_dice_roll_result</item>
+    </style>
+
+    <style name="frag_dice_textview_numsides">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/font_size_dice_num_sides</item>
+    </style>
+
+
+    <style name="imagebutton"></style>
+
+    <style name="imagebutton.colorpicker">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <style name="imagebutton.remove">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!--style in values-v11 -->
+    <style name="button_bar">
+        <item name="android:background">@color/brand_green</item>
+    </style>
+
+    <style name="button">
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+
+    <!-- keyboard -->
+    <style name="key">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:padding">0dip</item>
+    </style>
+
+    <style name="key.gray">
+        <item name="android:background">@drawable/key_gray</item>
+
+    </style>
+
+    <style name="key.black">
+        <item name="android:background">@drawable/key_black</item>
+    </style>
+
+    <style name="key.green">
+        <item name="android:background">@drawable/key_green</item>
+    </style>
+
+    <style name="key.red">
+        <item name="android:background">@drawable/key_red</item>
+    </style>
+
+    <style name="text_scores_round_num_bar" parent="wrap">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/brand_green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_size_default</item>
+    </style>
+
+    <style name="text_list_item" parent="autosized.horizontal.centered">
+        <item name="android:textSize">@dimen/font_size_default</item>
+        <item name="android:textColor">@color/text_default</item>
+    </style>
+
+    <style name="text_default">
+        <item name="android:textSize">@dimen/font_size_default</item>
+        <item name="android:textColor">@color/text_default</item>
+    </style>
+
+    <style name="about_link_text">
+        <item name="android:textColor">@color/brand_green</item>
+        <item name="android:textSize">@dimen/font_size_about_link_text</item>
+    </style>
+
+
+</resources>

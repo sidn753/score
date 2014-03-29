@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/root_view.linear.vertical">
+
+    <ListView
+        android:id="@+id/scores_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        />
+
+
+    <include
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/keyboard"/>
+
+
+    <!--round number display -->
+    <!--declared out of order for relative positioning, is above button bar -->
+    <RelativeLayout
+        android:id="@+id/frag_scores_round_num_view_parent"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/stats_header_bg"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="horizontal">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/frag_scores_round_num_view_round_label"
+                  android:gravity="left|center_vertical"
+                  android:layout_alignParentLeft="true"
+                  android:text="@string/scores_round_num_view_round_label"
+                  style="@style/text_scores_round_num_bar"/>
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/frag_scores_round_num_view_round"
+                  android:gravity="right|center_vertical"
+                  android:layout_toRightOf="@id/frag_scores_round_num_view_round_label"
+                  style="@style/text_scores_round_num_bar"/>
+
+
+        <!--declared out of order for relative positioning -->
+        <com.amusementlabs.whatsthescore.util.AutoScaleTextView
+            android:id="@+id/frag_scores_round_num_view_total"
+            android:gravity="right|center_vertical"
+            android:layout_alignParentRight="true"
+            style="@style/text_scores_round_num_bar"/>
+
+        <com.amusementlabs.whatsthescore.util.AutoScaleTextView
+            android:id="@+id/frag_scores_round_num_view_total_label"
+            android:gravity="left|center_vertical"
+            android:layout_toLeftOf="@id/frag_scores_round_num_view_total"
+            android:text="@string/scores_round_num_view_total_label"
+            style="@style/text_scores_round_num_bar"/>
+
+    </RelativeLayout>
+
+
+    <!--button bar -->
+    <LinearLayout
+        android:id="@+id/frag_scores_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        style="@style/button_bar"> <!-- HORIZONTAL layout -->
+
+        <Button
+            android:id="@+id/button_save_round"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SAVE ROUND"
+            style="@style/button"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

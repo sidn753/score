@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/root_view.list_item"
+    >  <!-- HORIZONTAL layout -->
+
+
+    <LinearLayout
+        android:id="@id/drag_handle"
+        android:layout_height="@dimen/color_tag_height"
+        android:layout_width="@dimen/color_tag_width"
+        android:layout_marginRight="@dimen/color_tag_margin_right"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"/>
+
+    <!--declared out of order-->
+    <ImageButton
+        android:id="@+id/edit_players_button_remove"
+        android:src="@drawable/ic_remove"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        style="@style/imagebutton.remove"/>
+
+    <com.amusementlabs.whatsthescore.util.AutoScaleTextView
+        android:id="@+id/edit_players_list_item_text"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/drag_handle"
+        android:layout_toLeftOf="@id/edit_players_button_remove"
+        android:layout_centerVertical="true"
+        style="@style/text_list_item"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/root_view.linear.vertical"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+    >
+
+    <TextView
+        android:id="@+id/about_feedback_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_about_feedback_text"
+        android:layout_marginTop="16dp"
+        style="@style/text_default"/>
+
+    <TextView
+        android:id="@+id/about_feedback_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_about_email_link_text"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="8dp"
+        style="@style/about_link_text"/>
+
+    <TextView
+        android:id="@+id/about_review_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_about_review_text"
+        android:layout_marginTop="16dp"
+        style="@style/text_default"/>
+
+    <TextView
+        android:id="@+id/about_review_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_about_review_link_text"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="8dp"
+        style="@style/about_link_text"/>
+
+    <TextView
+        android:id="@+id/about_share_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_about_share_text"
+        android:layout_marginTop="16dp"
+        style="@style/text_default"/>
+
+    <TextView
+        android:id="@+id/about_share_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_about_share_link_text"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="8dp"
+        style="@style/about_link_text"/>
+
+
+</LinearLayout>

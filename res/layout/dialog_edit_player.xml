@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/root_view.linear"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!-- title -->
+    <TextView
+        android:layout_height="?android:listPreferredItemHeight"
+        android:layout_width="match_parent"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/brand_green"
+        android:textSize="@dimen/font_size_dialog_title"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+
+        android:text="@string/edit_player_button_text"/>
+
+    <!-- divider between title and content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginBottom="8dp"
+        android:background="@color/brand_green"/>
+
+    <EditText
+        android:id="@+id/dialog_add_player_edittext_name"
+        android:layout_weight="1"
+        android:layout_margin="16dp"
+        style="@style/autosized"/>
+
+
+    <!-- row 1 -->
+    <LinearLayout
+        style="@style/wrap.full_width"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+        <ImageButton
+            android:id="@+id/dialog_add_player_color_1"
+            android:background="@color/team_red"
+            android:src="@drawable/statedraw_button_colors"
+            style="@style/imagebutton.colorpicker"/>
+
+        <ImageButton
+            android:id="@+id/dialog_add_player_color_2"
+            android:background="@color/team_orange"
+            android:src="@drawable/statedraw_button_colors"
+            style="@style/imagebutton.colorpicker"/>
+
+        <ImageButton
+            android:id="@+id/dialog_add_player_color_3"
+            android:background="@color/team_yellow"
+            android:src="@drawable/statedraw_button_colors"
+            style="@style/imagebutton.colorpicker"/>
+
+        <ImageButton
+            android:id="@+id/dialog_add_player_color_4"
+            android:background="@color/team_limegreen"
+            android:src="@drawable/statedraw_button_colors"
+            style="@style/imagebutton.colorpicker"/>
+
+        <ImageButton
+            android:id="@+id/dialog_add_player_color_5"
+            android:background="@color/team_green"
+            android:src="@drawable/statedraw_button_colors"
+            style="@style/imagebutton.colorpicker"/>
+    </LinearLayout>
+
+    <!-- row 2 -->
+    <LinearLayout
+        style="@style/wrap.full_width"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        >
+
+        <ImageButton
+            android:id="@+id/dialog_add_player_color_6"
+            android:background="@color/team_teal"
+            android:src="@drawable/statedraw_button_colors"
+            style="@style/imagebutton.colorpicker"/>
+
+        <ImageButton
+            android:id="@+id/dialog_add_player_color_7"
+            android:background="@color/team_skyblue"
+            android:src="@drawable/statedraw_button_colors"
+            style="@style/imagebutton.colorpicker"/>
+
+        <ImageButton
+            android:id="@+id/dialog_add_player_color_8"
+            android:background="@color/team_blue"
+            android:src="@drawable/statedraw_button_colors"
+            style="@style/imagebutton.colorpicker"/>
+
+        <ImageButton
+            android:id="@+id/dialog_add_player_color_9"
+            android:background="@color/team_purple"
+            android:src="@drawable/statedraw_button_colors"
+            style="@style/imagebutton.colorpicker"/>
+
+        <ImageButton
+            android:id="@+id/dialog_add_player_color_10"
+            android:background="@color/team_pink"
+            android:src="@drawable/statedraw_button_colors"
+            style="@style/imagebutton.colorpicker"/>
+    </LinearLayout>
+
+    <!-- row 3 -->
+    <LinearLayout
+        style="@style/wrap.full_width"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageButton
+            android:id="@+id/dialog_add_player_color_11"
+            android:background="@color/team_beige"
+            android:src="@drawable/statedraw_button_colors"
+            style="@style/imagebutton.colorpicker"/>
+
+        <ImageButton
+            android:id="@+id/dialog_add_player_color_12"
+            android:background="@color/team_brown"
+            android:src="@drawable/statedraw_button_colors"
+            style="@style/imagebutton.colorpicker"/>
+
+        <ImageButton
+            android:id="@+id/dialog_add_player_color_13"
+            android:background="@color/team_black"
+            android:src="@drawable/statedraw_button_colors"
+            style="@style/imagebutton.colorpicker"/>
+
+        <ImageButton
+            android:id="@+id/dialog_add_player_color_14"
+            android:background="@color/team_gray"
+            android:src="@drawable/statedraw_button_colors"
+            style="@style/imagebutton.colorpicker"/>
+
+        <ImageButton
+            android:id="@+id/dialog_add_player_color_15"
+            android:background="@color/transparent"
+            android:src="@drawable/statedraw_button_colors_noteam"
+            style="@style/imagebutton.colorpicker"/>
+    </LinearLayout>
+
+
+</LinearLayout>

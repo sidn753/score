@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="view_listview_divider">0.5dp</dimen>
+
+    <dimen name="font_size_actionbar_title">16sp</dimen>
+    <dimen name="font_size_timer">100sp</dimen>
+    <dimen name="font_size_dice_roll_result">80sp</dimen>
+    <dimen name="font_size_dice_num_sides">16sp</dimen>
+    <dimen name="font_size_nav_drawer_list_item">20sp</dimen>
+    <dimen name="font_size_dialog_title">24sp</dimen>
+
+    <dimen name="font_size_default">18sp</dimen>
+
+
+    <dimen name="padding_nav_drawer_list_item">16dp</dimen>
+    <dimen name="padding_nav_drawer_list_item_drawable">16dp</dimen>
+
+    <dimen name="color_tag_width">16dp</dimen>
+    <dimen name="color_tag_margin_right">16dp</dimen>
+    <dimen name="stats_color_tag_width">12dp</dimen>
+    <dimen name="stats_color_tag_margin_right">6dp</dimen>
+
+    <dimen name="color_tag_height">48dp</dimen>
+
+
+    <dimen name="height_list_item">56dip</dimen>
+    <dimen name="padding_list_item">4dip</dimen>
+    <dimen name="nav_drawer_width">240dp</dimen>
+    <dimen name="scores_list_item_side_padding">20dp</dimen>
+    <dimen name="font_size_about_link_text">22sp</dimen>
+</resources>

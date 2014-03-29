@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:gravity="center_horizontal"
+              style="@style/root_view.linear.vertical">
+
+
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/timer_view"
+            android:layout_gravity="center"
+            style="@style/frag_timer_textview_timer"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/frag_timer_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        style="@style/button_bar"> <!-- HORIZONTAL layout -->
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_weight="2"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:text="START"
+            android:textStyle="bold"
+            style="@style/button"
+            />
+
+
+        <Button
+            android:id="@+id/resetButton"
+            android:text="RESET"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            style="@style/button"
+            />
+    </LinearLayout>
+</LinearLayout>

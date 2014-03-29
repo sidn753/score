@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/prefs_section_title_scoring">
+        <!--input mode -->
+        <ListPreference
+            android:key="@string/prefs_title_input"
+            android:title="@string/prefs_title_input"
+            android:summary="@string/pref_input_summ_keyboard"
+            android:defaultValue="@string/pref_input_keyboard"
+            android:entries="@array/array_input_modes"
+            android:entryValues="@array/array_input_modes_values"
+            />
+        <!--sorting mode -->
+        <ListPreference
+            android:key="@string/prefs_title_sorting"
+            android:title="@string/prefs_title_sorting"
+            android:summary="@string/prefs_summ_sorting"
+            android:defaultValue="@string/pref_sorting_user"
+            android:entries="@array/array_sorting_modes"
+            android:entryValues="@array/array_sorting_modes_values"
+            />
+        <!--save confirmation -->
+        <CheckBoxPreference
+            android:key="@string/prefs_title_save_conf"
+            android:title="@string/prefs_title_save_conf"
+            android:defaultValue="false"
+            />
+
+        <!--display current round -->
+        <CheckBoxPreference
+            android:key="@string/prefs_title_show_round"
+            android:title="@string/prefs_title_show_round"
+            android:defaultValue="true"
+            />
+        <!--display current round -->
+        <CheckBoxPreference
+            android:key="@string/prefs_title_show_total"
+            android:title="@string/prefs_title_show_total"
+            android:defaultValue="true"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/prefs_section_title_timer">
+        <RingtonePreference
+            android:key="@string/prefs_title_timer_ringtone"
+            android:title="@string/prefs_title_timer_ringtone"
+            android:showSilent="true"
+            android:showDefault="true"
+            android:ringtoneType="notification"
+            />
+
+        <CheckBoxPreference
+            android:key="@string/prefs_title_timer_vibrate"
+            android:title="@string/prefs_title_timer_vibrate"
+            android:defaultValue="true"
+            />
+
+        <CheckBoxPreference
+            android:key="@string/prefs_title_timer_notification"
+            android:title="@string/prefs_title_timer_notification"
+            android:defaultValue="true"
+            />
+    </PreferenceCategory>
+
+</PreferenceScreen>

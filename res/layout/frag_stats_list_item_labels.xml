@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/root_view.list_item"
+              android:id="@+id/stats_listitem_label_parent"
+    > <!-- HORIZONTAL layout -->
+
+    <LinearLayout
+        android:id="@+id/stats_listitem_label_colortag"
+        android:layout_height="fill_parent"
+        android:layout_width="@dimen/stats_color_tag_width"
+        android:layout_marginRight="@dimen/stats_color_tag_margin_right"
+        android:orientation="horizontal"/>
+
+    <com.amusementlabs.whatsthescore.util.AutoScaleTextView
+        android:id="@+id/stats_listitem_label_name"
+        android:layout_weight="1"
+        style="@style/text_list_item"/>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="acc_drawer_open">Open navigation drawer</string>
+    <string name="acc_drawer_close">Navigation drawer close</string>
+
+
+</resources>

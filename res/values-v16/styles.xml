@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="frag_timer_textview_timer" parent="wrap.full_width">
+        <item name="android:gravity">center|center_vertical</item>
+        <item name="android:textSize">@dimen/font_size_timer</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+
+    </style>
+
+</resources>

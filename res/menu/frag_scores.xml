@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_reset_game"
+        android:icon="@drawable/ic_reset"
+        android:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_random_player"
+        android:icon="@drawable/ic_random"
+        android:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_scores_edit_players"
+        android:icon="@drawable/ic_edit_players"
+        android:showAsAction="always"/>
+
+
+</menu>

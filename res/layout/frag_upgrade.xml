@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/root_view.linear.vertical"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+    >
+
+    <TextView
+        android:id="@+id/upgrade_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_upgrade_text"
+        android:layout_marginTop="16dp"
+        style="@style/text_default"/>
+
+
+    <Button
+        android:id="@+id/button_upgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/upgrade_button_text"
+        android:background="@color/brand_green"
+        android:padding="16dp"
+        android:layout_gravity="center_horizontal"
+        style="@style/button"
+        />
+</LinearLayout>

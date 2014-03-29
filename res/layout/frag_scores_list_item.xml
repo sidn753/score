@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/root_view.list_item"
+              android:background="@drawable/activated_background_holo_light"
+              android:paddingLeft="@dimen/scores_list_item_side_padding"
+              android:paddingRight="@dimen/scores_list_item_side_padding"
+
+    >  <!-- HORIZONTAL layout -->
+
+
+    <LinearLayout
+        android:id="@+id/frag_scores_list_item_colortag"
+        android:layout_height="fill_parent"
+        android:layout_width="@dimen/color_tag_width"
+        android:layout_marginRight="@dimen/color_tag_margin_right"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"/>
+
+
+    <com.amusementlabs.whatsthescore.util.AutoScaleTextView
+        android:id="@+id/list_item_view_name"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        style="@style/text_list_item"
+        />
+
+    <com.amusementlabs.whatsthescore.util.AutoScaleTextView
+        android:id="@+id/list_item_view_pending_score"
+        android:gravity="right|center_vertical"
+        android:layout_weight="1"
+        style="@style/text_list_item"/>
+
+    <com.amusementlabs.whatsthescore.util.AutoScaleTextView
+        android:id="@+id/list_item_view_total"
+        android:gravity="right|center_vertical"
+        android:layout_weight="1"
+        style="@style/text_list_item"/>
+
+
+</LinearLayout>
+

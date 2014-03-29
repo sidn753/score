@@ -1,0 +1,74 @@
+<resources>
+
+
+    <!--TODO change upgrade link here-->
+    <string name="upgrade_market_uri">market://details?id=com.amusementlab.whatsthescore</string>
+
+    <string name="app_name">What\'s the Score?</string>
+    <string name="nav_scores_title">Scores</string>
+    <string name="nav_stats_title">Stats</string>
+    <string name="nav_timer_title">Timer</string>
+    <string name="nav_dice_title">Dice</string>
+    <string name="nav_prefs_title">Settings</string>
+    <string name="nav_about_title">About</string>
+    <string name="nav_upgrade_title">Remove Ads</string>
+
+    <string name="act_edit_players_title">Edit Players</string>
+    <string name="act_edit_dice_title">Edit Dice</string>
+
+
+    <string name="dice_sides_label">SIDES</string>
+
+    <!-- edit players dialog- positive button text options based on new or existing player being edited-->
+    <string name="edit_player_button_text">Edit Player</string>
+    <string name="add_player_button_text">Add Player</string>
+
+    <string name="save_button_text">Save</string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="save_round_button_text">Save Round</string>
+    <string name="timer_start_button_text">START</string>
+    <string name="timer_pause_button_text">PAUSE</string>
+    <string name="dice_roll_button_text">ROLL DICE</string>
+    <string name="upgrade_button_text">UPGRADE NOW</string>
+
+
+    <string name="stats_rounds_header_text">Round:</string>
+
+    <string name="scores_round_num_view_round_label">Round:</string>
+    <string name="scores_round_num_view_total_label">Total:</string>
+
+
+    <string name="confirmation_question">Are you sure?</string>
+
+
+    <string name="notification_timer_in_progress_text">Timer Running</string>
+    <string name="notification_timer_complete_title">Time\'s up!</string>
+    <string name="notification_timer_complete_content">Timer has finished</string>
+
+
+    <string name="about_text_email_addr">info@amusementlabs.com</string>
+    <string name="about_name_hint">Name (optional)</string>
+    <string name="about_comment_hint">Comment</string>
+    <string name="about_email_hint">Email (optional)</string>
+    <string name="add_another_button_text">Add Another</string>
+    <string name="prefs_title_timer_ringtone">Ring Sound</string>
+
+    <string name="frag_upgrade_text">Buy the premium version of What\'s the Score and enjoy an ad-free experience.
+        \n\nWe
+        appreciate all of your support and hope you\'ll tell your friends about this fantastic app.
+    </string>
+
+    <string name="frag_about_feedback_text">What\'s the Score is a product of Amusement Labs. You may contact us at:
+    </string>
+    <string name="frag_about_email_link_text">info@amusmentlabs.com</string>
+    <string name="frag_about_review_text">Do you find What\'s the Score useful?</string>
+    <string name="frag_about_review_link_text">Leave a review on Google Play</string>
+    <string name="frag_about_share_text">Want to tell others about What\'s the Score?</string>
+    <string name="frag_about_share_link_text">Share this app</string>
+    <string name="dialog_reset_game_title">Reset game</string>
+    <string name="dialog_reset_game_content_text">Reset all scores to:</string>
+    <string name="dialog_reset_game_confirm_text">Are you sure you want to reset the game? Saved scores will be lost.
+    </string>
+
+
+</resources>

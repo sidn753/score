@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/root_view.list_item"
+              android:id="@+id/frag_stats_list_item_parent"
+    > <!-- HORIZONTAL layout -->
+
+    <com.amusementlabs.whatsthescore.util.AutoScaleTextView
+        android:id="@+id/stats_list_item_view_name"
+        android:layout_weight="1"
+        style="@style/text_list_item"/>
+
+</LinearLayout>

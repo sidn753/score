@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Preference section titles-->
+    <string name="prefs_section_title_scoring">Scoring</string>
+    <string name="prefs_section_title_timer">Timer</string>
+    <string name="prefs_section_title_general">General</string>
+
+
+    <!--Preferences strings-->
+    <string name="prefs_title_sorting">Sorting</string>
+    <string name="prefs_summ_sorting">Sort users by</string>
+
+    <string name="prefs_title_save_conf">Save Round Confirmation</string>
+    <string name="prefs_title_show_round">Display Current Round</string>
+    <string name="prefs_title_show_total">Display Total Score</string>
+
+    <string name="prefs_title_timer_vibrate">Vibrate on Completion</string>
+    <string name="prefs_title_timer_notification">Notify on Completion</string>
+
+    <string name="pref_sorting_score_high_to_low">score, highest to lowest</string>
+    <string name="pref_sorting_score_low_to_high">score, lowest to highest</string>
+    <string name="pref_sorting_name">name</string>
+    <string name="pref_sorting_user">user defined order</string>
+
+    <string name="pref_input_keyboard">Keyboard</string>
+    <string name="pref_input_plusone">+1</string>
+
+    <string name="prefs_title_input">Scoring Mode</string>
+    <string name="pref_input_summ_keyboard">Keyboard- enter scores with the keyboard</string>
+    <string name="pref_input_summ_plusone">+1- tap player to increase score by one</string>
+
+
+    <!-- preferences arrays-->
+    <string-array name="array_sorting_modes">
+        <item>By score, highest to lowest</item>
+        <item>By score, lowest to highest</item>
+        <item>By name</item>
+        <item>By user defined order</item>
+    </string-array>
+    <string-array name="array_sorting_modes_values">
+        <item>@string/pref_sorting_score_high_to_low</item>
+        <item>@string/pref_sorting_score_low_to_high</item>
+        <item>@string/pref_sorting_name</item>
+        <item>@string/pref_sorting_user</item>
+    </string-array>
+
+    <string-array name="array_input_modes">
+        <item>Keyboard</item>
+        <item>+1</item>
+
+    </string-array>
+    <string-array name="array_input_modes_values">
+        <item>@string/pref_input_keyboard</item>
+        <item>@string/pref_input_plusone</item>
+    </string-array>
+
+
+</resources>
