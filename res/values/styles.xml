@@ -1,4 +1,64 @@
 <resources>
+    
+    <style name="Theme.Score_green" parent="@style/Theme.Sherlock.Light.DarkActionBar">
+        <item name="actionBarItemBackground">@drawable/selectable_background_score_green</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Score_green</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Score_green</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Score_green</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Score_green</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Score_green</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_score_green</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_score_green</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Score_green</item>
+
+                <!-- Light.DarkActionBar specific -->
+        <item name="actionBarWidgetTheme">@style/Theme.Score_green.Widget</item>
+
+    </style>
+
+    <style name="ActionBar.Solid.Score_green" parent="@style/Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/ab_solid_score_green</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_score_green</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_score_green</item>
+        <item name="progressBarStyle">@style/ProgressBar.Score_green</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Score_green" parent="@style/Widget.Sherlock.ActionBar">
+        <item name="background">@drawable/ab_transparent_score_green</item>
+        <item name="progressBarStyle">@style/ProgressBar.Score_green</item>
+    </style>
+	
+    <style name="PopupMenu.Score_green" parent="@style/Widget.Sherlock.ListPopupWindow">	
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_score_green</item>	
+    </style>
+	
+    <style name="DropDownListView.Score_green" parent="@style/Widget.Sherlock.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_score_green</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Score_green" parent="@style/Widget.Sherlock.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_score_green</item>
+    </style>
+	
+    <style name="DropDownNav.Score_green" parent="@style/Widget.Sherlock.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_score_green</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_score_green</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_score_green</item>
+    </style>
+    
+    <style name="ProgressBar.Score_green" parent="@style/Widget.Sherlock.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_score_green</item>
+    </style>
+    
+    <style name="ActionButton.CloseMode.Score_green" parent="@style/Widget.Sherlock.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_score_green</item>
+    </style>
+    
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Score_green.Widget" parent="@style/Theme.Sherlock">
+        <item name="popupMenuStyle">@style/PopupMenu.Score_green</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Score_green</item>
+    </style>
 
 
     <style name="Theme.WhatsTheScore" parent="Theme.Sherlock.Light">

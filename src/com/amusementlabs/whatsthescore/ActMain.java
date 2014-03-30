@@ -4,6 +4,7 @@ package com.amusementlabs.whatsthescore;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.os.PowerManager;
@@ -91,7 +92,9 @@ public class ActMain extends SherlockFragmentActivity {
         View mCustomView = inflater.inflate(R.layout.actionbar_title, null);
         mActionBarTitle = (TextView) mCustomView.findViewById(R.id.actionbar_title);
         mActionBarContainer = (LinearLayout) mCustomView.findViewById(R.id.actionbar_container);
-        mActionBarTitle.setText("What's the Score");
+        mActionBarTitle.setText("What's the Score?");
+        mActionBarTitle.setTextColor(Color.parseColor("#ffffff"));
+
         ab.setCustomView(mCustomView);
         ab.setDisplayShowCustomEnabled(true);
 
@@ -169,6 +172,7 @@ public class ActMain extends SherlockFragmentActivity {
         mActionBarTitle.setText(title);
         mActionBarTitle.invalidate();
         mActionBarTitle.invalidate();
+        mActionBarTitle.setTextColor(Color.parseColor("#ffffff"));
 
 
     }

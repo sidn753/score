@@ -26,7 +26,7 @@
     <color name="key_green">#66b86e</color>
     <color name="key_red">#ef3142</color>
 
-    <color name="stats_header_bg">#d3d2d2</color>
+    <color name="stats_header_bg">#B1D7BD</color>
 
     <color name="brand_green">#6db37c</color>
     <color name="button_bar_bg_red">#ef3142</color>
@@ -41,7 +41,7 @@
     <color name="text_light_grey">#ff888888</color>
     <color name="background">#ffffffff</color>
     <color name="countdown_background">#fff5f5f5</color>
-    <color name="actionbar_title_color">#000000</color>
+    <color name="actionbar_title_color">#ffffff</color>
     <color name="highlight_color">#82171D</color>
 
     <color name="red_button_bg">#ff82171D</color>

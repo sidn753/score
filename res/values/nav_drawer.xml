@@ -15,7 +15,7 @@
     <array name="nav_drawer_icons">
         <item>@drawable/ic_scores</item>
         <item>@drawable/ic_stats</item>
-        <item>@drawable/ic_timer</item>
+        <item>@drawable/reset_time</item>
         <item>@drawable/ic_dice</item>
         <item>@drawable/ic_settings</item>
         <item>@drawable/ic_about</item>

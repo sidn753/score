@@ -4,7 +4,7 @@
 
     > <!-- HORIZONTAL layout, dont use root_view.horizontal because padding is defined by text_nav_drawer -->
 
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    <TextView 
               android:id="@+id/nav_drawer_list_item_text"
               android:layout_weight="1"
               style="@style/text_nav_drawer"/>

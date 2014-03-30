@@ -9,12 +9,13 @@ import android.preference.Preference;
 import android.preference.RingtonePreference;
 import android.support.v4.app.NavUtils;
 import com.actionbarsherlock.app.SherlockPreferenceActivity;
+import com.actionbarsherlock.view.MenuItem;
 import com.amusementlabs.whatsthescore.R;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.OptionsItem;
+//removed on preference changed listener for notification
 
-@EActivity
-public class ActPrefs extends SherlockPreferenceActivity implements SharedPreferences.OnSharedPreferenceChangeListener, Preference.OnPreferenceChangeListener {
+public class ActPrefs extends SherlockPreferenceActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
 
 
     @Override
@@ -27,10 +28,15 @@ public class ActPrefs extends SherlockPreferenceActivity implements SharedPrefer
         updateSummaries();
     }
 
-    @OptionsItem
-    boolean homeSelected() {
-        NavUtils.navigateUpFromSameTask(this);
-        return true;
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+        // Respond to the action bar's Up/Home button
+        case android.R.id.home:
+            NavUtils.navigateUpFromSameTask(this);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -49,8 +55,9 @@ public class ActPrefs extends SherlockPreferenceActivity implements SharedPrefer
 
 
         // A patch to overcome OnSharedPreferenceChange not being called by RingtonePreference bug
-        RingtonePreference pref = (RingtonePreference) findPreference(getString(R.string.prefs_title_timer_ringtone));
-        pref.setOnPreferenceChangeListener(this);
+        //This ishas been changed for the new timer
+       // RingtonePreference pref = (RingtonePreference) findPreference(getString(R.string.prefs_title_timer_ringtone));
+       // pref.setOnPreferenceChangeListener(this);
 
     }
 
@@ -82,26 +89,27 @@ public class ActPrefs extends SherlockPreferenceActivity implements SharedPrefer
 
 
         //set ringtone summary (here to set summary on create, updates handles by onPrefereneChange)
-        key = getString(R.string.prefs_title_timer_ringtone);
-        value = getPreferenceScreen().getSharedPreferences().getString(key, "");
-        updateRingtoneSummary((RingtonePreference) findPreference(key), Uri.parse(value));
+        //changed for the new timer
+        //key = getString(R.string.prefs_title_timer_ringtone);
+        //value = getPreferenceScreen().getSharedPreferences().getString(key, "");
+       // updateRingtoneSummary((RingtonePreference) findPreference(key), Uri.parse(value));
 
     }
 
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        //this method needed to to bug in android
-        updateRingtoneSummary((RingtonePreference) preference, Uri.parse((String) newValue));
-        return true;
-    }
+//    @Override
+//    public boolean onPreferenceChange(Preference preference, Object newValue) {
+//        //this method needed to to bug in android
+//        updateRingtoneSummary((RingtonePreference) preference, Uri.parse((String) newValue));
+//        return true;
+//    }
 
-    private void updateRingtoneSummary(RingtonePreference preference, Uri ringtoneUri) {
-        Ringtone ringtone = RingtoneManager.getRingtone(this, ringtoneUri);
-        if (ringtone != null && !ringtone.getTitle(this).equals("Unknown ringtone"))
-            preference.setSummary(ringtone.getTitle(this));
-        else
-            preference.setSummary("Silent");
-    }
+//    private void updateRingtoneSummary(RingtonePreference preference, Uri ringtoneUri) {
+//        Ringtone ringtone = RingtoneManager.getRingtone(this, ringtoneUri);
+//        if (ringtone != null && !ringtone.getTitle(this).equals("Unknown ringtone"))
+//            preference.setSummary(ringtone.getTitle(this));
+//        else
+//            preference.setSummary("Silent");
+//    }
 
 
 }
