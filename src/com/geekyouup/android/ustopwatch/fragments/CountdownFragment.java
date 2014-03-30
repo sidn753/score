@@ -286,7 +286,7 @@ public class CountdownFragment extends SherlockFragment {
 	        if (mDialogOnScreen)
 	            return;
 
-	        ContextThemeWrapper wrapper = new ContextThemeWrapper(getSherlockActivity(), android.R.style.Theme_Holo);
+	        ContextThemeWrapper wrapper = new ContextThemeWrapper(getSherlockActivity(), android.R.style.Theme_Holo_Light);
 	        final LayoutInflater inflater = (LayoutInflater) wrapper.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 	        View ll = inflater.inflate(R.layout.countdown_picker,null);
 
