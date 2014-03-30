@@ -9,6 +9,7 @@
     <dimen name="font_size_dice_num_sides">16sp</dimen>
     <dimen name="font_size_nav_drawer_list_item">20sp</dimen>
     <dimen name="font_size_dialog_title">24sp</dimen>
+    <dimen name="counter_font">50sp</dimen>
 
     <dimen name="font_size_default">18sp</dimen>
 
@@ -22,7 +23,7 @@
     <dimen name="stats_color_tag_margin_right">6dp</dimen>
 
     <dimen name="color_tag_height">48dp</dimen>
-
+    <dimen name="bottom_bar_portrait_button_font_size">16dp</dimen>
 
     <dimen name="height_list_item">56dip</dimen>
     <dimen name="padding_list_item">4dip</dimen>

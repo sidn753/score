@@ -13,6 +13,7 @@
 
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application
         android:theme="@style/Theme.WhatsTheScore"
@@ -62,10 +63,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ActMain_"/>
         </activity>
-
+        
 
         <service android:name="ServiceTimer_"/>
-
 
         <activity
             android:name="com.google.ads.AdActivity"

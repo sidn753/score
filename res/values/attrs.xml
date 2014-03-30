@@ -5,4 +5,10 @@
     <declare-styleable name="AutoScaleTextView">
         <attr name="minTextSize" format="dimension"/>
     </declare-styleable>
+    <declare-styleable name="StopwatchCustomView">
+        <attr name="watchType" format="enum">
+            <enum name="type_stopwatch" value="1"/>
+            <enum name="type_countdown" value="0"/>
+        </attr>
+    </declare-styleable>
 </resources>

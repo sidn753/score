@@ -21,6 +21,8 @@ import com.amusementlabs.whatsthescore.nav.ActPrefs;
 import com.amusementlabs.whatsthescore.nav.MenuItemHelper;
 import com.amusementlabs.whatsthescore.nav.NavDrawer;
 import com.amusementlabs.whatsthescore.util.PrefsHelper;
+import com.geekyouup.android.ustopwatch.fragments.CountdownFragment;
+
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
@@ -33,8 +35,16 @@ import static com.amusementlabs.whatsthescore.util.Constants.OPENED_FROM_TIMER_N
 @EActivity(R.layout.act_main_ad)
 public class ActMain extends SherlockFragmentActivity {
 
-
+    private boolean mFlashResetIcon = false;
+    private static boolean isAnimating = true;
+	public static final String MSG_UPDATE_COUNTER_TIME = "msg_update_counter";
+	public static final String MSG_NEW_TIME_DOUBLE = "msg_new_time_double";
+    public static final String MSG_STATE_CHANGE = "msg_state_change";
     private static final String CURRENT_FRAGMENT = "currentFragment";
+    private CountdownFragment mCountdownFragment;
+    private static boolean isEndlessAlarm = false;
+
+    
     @ViewById(R.id.drawer_layout)
     DrawerLayout mDrawerLayout;
 
@@ -172,22 +182,25 @@ public class ActMain extends SherlockFragmentActivity {
 
             mCurrentFragment = name;
 
-            Fragment nextContentFragment;
+            Fragment nextContentFragment = null;
             if (name.equals(getString(R.string.nav_stats_title))) {
                 nextContentFragment = new FragStats_();
 
             } else if (name.equals(getString(R.string.nav_timer_title))) {
-                nextContentFragment = new FragTimer_();
+                nextContentFragment = new  CountdownFragment();
 
             } else if (name.equals(getString(R.string.nav_dice_title))) {
-                nextContentFragment = new FragDice_();
+            	nextContentFragment = new FragDice_();
 
             } else if (name.equals(getString(R.string.nav_about_title))) {
                 nextContentFragment = new FragAbout_();
+                
             } else if (name.equals(getString(R.string.nav_upgrade_title))) {
                 nextContentFragment = new FragUpgrade();
+                
             } else {
                 nextContentFragment = new FragScores_();
+                
             }
 
             FragmentManager fragmentManager = getSupportFragmentManager();
@@ -210,6 +223,19 @@ public class ActMain extends SherlockFragmentActivity {
             //reload current fragment, due to possible changes
             changeFragment(mCurrentFragment);
         }
+    }
+    
+    public void registerCountdownFragment(CountdownFragment cdf)
+    {
+        mCountdownFragment = cdf;
+    }
+
+    public static boolean isAnimating(){
+        return isAnimating;
+    }
+    
+    public static boolean isEndlessAlarm() {
+        return isEndlessAlarm;
     }
 
 
