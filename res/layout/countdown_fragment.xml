@@ -29,8 +29,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/blue_button_bg"
-        android:divider="@drawable/divider_vertical_blue"
+        android:background="@color/green_button_bg"
+        android:divider="@drawable/divider_vertical_green"
         android:orientation="horizontal"
         android:showDividers="middle" >
 
@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_weight="1"
-            android:background="@drawable/blue_button_bg_color"
+            android:background="@drawable/green_button_bg_color"
             android:contentDescription="@string/contentdesc_start_cd"
             android:fontFamily="sans-serif"
             android:text="@string/start"
@@ -51,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_weight="1"
-            android:background="@drawable/blue_button_bg_color"
+            android:background="@drawable/green_button_bg_color"
             android:contentDescription="@string/contentdesc_reset"
             android:fontFamily="sans-serif"
             android:text="@string/reset"

@@ -3,6 +3,7 @@ package com.geekyouup.android.ustopwatch;
 import com.amusementlabs.whatsthescore.ActMain;
 import com.amusementlabs.whatsthescore.R;
 
+import android.annotation.TargetApi;
 import android.app.AlarmManager;
 import android.app.NotificationManager;
 import android.app.Notification;
@@ -11,7 +12,6 @@ import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.media.AudioManager;
-import android.net.Uri;
 import android.os.Build;
 import android.os.IBinder;
 import android.support.v4.app.NotificationCompat;
@@ -35,7 +35,7 @@ public class AlarmUpdater {
         
 		try
 		{
-			((NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE)).cancel(R.layout.act_main_ad); //TODO FOR AD FREE
+	    ((NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE)).cancel(R.layout.act_main_ad); //TODO FOR AD FREE
 		}catch(Exception ignored){}
 	}
 	//cancels alarm then sets new one
@@ -55,7 +55,7 @@ public class AlarmUpdater {
     	
         @Override
         public int onStartCommand(Intent intent, int flags, int startId) {
-            // Build the widget update for today
+            //Build the widget update for today
 			//no need for a screen, this just has to refresh all content in the background
         	//cancelCountdownAlarm(this);
         	notifyStatusBar();
@@ -125,17 +125,17 @@ public class AlarmUpdater {
         }
     }
 
-    /*public static void showCountdownChronometerNotification(Context context, long endTime)
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN) public static void showCountdownChronometerNotification(Context context, long endTime)
     {
         if(android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH)
         {
             // The PendingIntent to launch our activity if the user selects this notification
-            Intent launcher = new Intent(context,UltimateStopwatchActivity.class);
+            Intent launcher = new Intent(context,ActMain.class);
             launcher.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
             PendingIntent contentIntent = PendingIntent.getActivity(context, 0,launcher,PendingIntent.FLAG_ONE_SHOT);
 
             Notification notification = new Notification.Builder(context)
-                    .setContentTitle("Ultimate Stopwatch")
+                    .setContentTitle("What's The Score?")
                     .setUsesChronometer(true)
                     .setWhen(System.currentTimeMillis() + endTime)
                     .setSmallIcon(R.drawable.notification_icon)
@@ -146,14 +146,14 @@ public class AlarmUpdater {
             // We use a layout id because it is a unique number.  We use it later to cancel.
             notificationManager.notify(R.layout.countdown_fragment, notification);
         }
-    }  */
+    }  
 
     public static void cancelChronometerNotification(Context context)
     {
         try
         {
             //((NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE)).cancel(R.layout.stopwatch_fragment);
-            //((NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE)).cancel(R.layout.countdown_fragment);
+            ((NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE)).cancel(R.layout.countdown_fragment);
         }catch(Exception ignored){}
     }
 }

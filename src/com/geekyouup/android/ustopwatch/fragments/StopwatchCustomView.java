@@ -92,30 +92,30 @@ public class StopwatchCustomView extends View {
         double handsScaleFactor;
 
         if (minDim >= 1000) {
-            mBackgroundImage = BitmapFactory.decodeResource(res, mIsStopwatch ? R.drawable.background1000 : R.drawable.background1000_cd, options);
+            mBackgroundImage = BitmapFactory.decodeResource(res, R.drawable.background1000_cd, options);
             handsScaleFactor = 1.388;
         } else if (minDim >= 720) {
-            mBackgroundImage = BitmapFactory.decodeResource(res, mIsStopwatch ? R.drawable.background720 : R.drawable.background720_cd, options);
+            mBackgroundImage = BitmapFactory.decodeResource(res, R.drawable.background720_cd, options);
             handsScaleFactor = 1;
         } else if (minDim >= 590) {
-            mBackgroundImage = BitmapFactory.decodeResource(res, mIsStopwatch ? R.drawable.background590 : R.drawable.background590_cd, options);
+            mBackgroundImage = BitmapFactory.decodeResource(res, R.drawable.background590_cd, options);
             handsScaleFactor = 0.82;
         } else if (minDim >= 460) {
-            mBackgroundImage = BitmapFactory.decodeResource(res, mIsStopwatch ? R.drawable.background460 : R.drawable.background460_cd, options);
+            mBackgroundImage = BitmapFactory.decodeResource(res, R.drawable.background460_cd, options);
             handsScaleFactor = 0.64;
         } else if (minDim >= 320) {
-            mBackgroundImage = BitmapFactory.decodeResource(res, mIsStopwatch ? R.drawable.background320 : R.drawable.background320_cd, options);
+            mBackgroundImage = BitmapFactory.decodeResource(res, R.drawable.background320_cd, options);
             handsScaleFactor = 0.444;
         } else if (minDim >= 240) {
-            mBackgroundImage = BitmapFactory.decodeResource(res, mIsStopwatch ? R.drawable.background240 : R.drawable.background240_cd, options);
+            mBackgroundImage = BitmapFactory.decodeResource(res, R.drawable.background240_cd, options);
             handsScaleFactor = 0.333;
         } else {
-            mBackgroundImage = BitmapFactory.decodeResource(res, mIsStopwatch ? R.drawable.background150 : R.drawable.background150_cd, options);
+            mBackgroundImage = BitmapFactory.decodeResource(res, R.drawable.background150_cd, options);
             handsScaleFactor = 0.208;
         }
 
-        mSecHand = res.getDrawable(mIsStopwatch ? R.drawable.sechand : R.drawable.sechand_cd);
-        mMinHand = res.getDrawable(mIsStopwatch ? R.drawable.minhand : R.drawable.minhand_cd);
+        mSecHand = res.getDrawable(R.drawable.sechand_cd);
+        mMinHand = res.getDrawable(R.drawable.minhand_cd);
 
         mSecsHalfWidth = mSecHand.getIntrinsicWidth() / 2;
         mSecsHalfHeight = mSecHand.getIntrinsicHeight() / 2;

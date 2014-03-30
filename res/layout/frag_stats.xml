@@ -1,31 +1,40 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_height="match_parent"
-              android:layout_width="match_parent"
-
-              android:orientation="vertical">
-
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
 
     <!-- container for grid -->
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                  android:id="@+id/frag_stats_parent"
-                  android:layout_height="0dp"
-                  android:layout_width="match_parent"
-                  android:orientation="horizontal"
-                  android:layout_weight="3"> <!-- HORIZIONTAL layout -->
-        <!--labels list-->
+
+    <LinearLayout
+        android:id="@+id/frag_stats_parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+        <!-- labels list -->
+
         <ListView
             android:id="@+id/frag_stats_list_labels"
-            android:layout_weight="2"
-            android:scrollbarThumbVertical="@color/transparent"
-            style="@style/autosized.horizontal"/>
-        <!-- scores -->
-        <android.support.v4.view.ViewPager
-            android:id="@+id/frag_stats_pager"
-            android:layout_weight="5"
             style="@style/autosized.horizontal"
-            />
+            android:layout_weight="2"
+            android:scrollbarThumbVertical="@color/transparent" />
+        <!-- scores -->
 
+        <RelativeLayout
+            style="@style/autosized.horizontal"
+            android:layout_weight="5" >
+
+            <TextView
+                android:background="@drawable/grey_shadow"
+                android:layout_width="18dp"
+                android:layout_height="fill_parent" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/frag_stats_pager"
+                android:layout_width="wrap_content"
+        		android:layout_height="match_parent" />
+            <!--   android:layout_weight="1" -->
+        </RelativeLayout>
     </LinearLayout>
-
 
 </LinearLayout>

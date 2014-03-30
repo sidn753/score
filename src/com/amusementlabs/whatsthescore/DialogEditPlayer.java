@@ -6,6 +6,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -73,6 +74,7 @@ public class DialogEditPlayer extends SherlockDialogFragment {
         View view = inflater.inflate(R.layout.dialog_edit_player, null);
 
         mNameInput = (EditText) view.findViewById(R.id.dialog_add_player_edittext_name);
+        mNameInput.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES);
         mNameInput.setOnKeyListener(new View.OnKeyListener() {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 // If the event is a key-down event on the "enter" button

@@ -1,9 +1,12 @@
 
 package com.amusementlabs.whatsthescore;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.media.AudioManager;
 import android.os.Bundle;
+import android.os.PowerManager;
 import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -35,6 +38,8 @@ import static com.amusementlabs.whatsthescore.util.Constants.OPENED_FROM_TIMER_N
 @EActivity(R.layout.act_main_ad)
 public class ActMain extends SherlockFragmentActivity {
 
+	private PowerManager mPowerMan;
+	private PowerManager.WakeLock mWakeLock;
     private boolean mFlashResetIcon = false;
     private static boolean isAnimating = true;
 	public static final String MSG_UPDATE_COUNTER_TIME = "msg_update_counter";
@@ -66,7 +71,6 @@ public class ActMain extends SherlockFragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         //drawer title is set to app title, currently does not get changed
         mTitle = getTitle();
 
@@ -75,6 +79,10 @@ public class ActMain extends SherlockFragmentActivity {
         // enable ActionBar app icon to behave as action to toggle nav drawer
         ab.setDisplayHomeAsUpEnabled(true);
         ab.setHomeButtonEnabled(true);
+        
+        //allow streaming for notifications TODO
+        mPowerMan = (PowerManager) getSystemService(Context.POWER_SERVICE);
+    	setVolumeControlStream(AudioManager.STREAM_MUSIC);
 
 
         ab.setDisplayShowTitleEnabled(false);
